@@ -46,7 +46,7 @@ func TestAddrSendBotMsg(t *testing.T) {
 
 	fmt.Printf("\nmsg:\n%s\n", msg)
 
-	url := "https://api.telegram.org/bot7727332343:AAGfl6k1zOS4-huCdqi-4a1DWRczt2JmkMQ/sendMessage"
+	url := "https://api.telegram.org/bot7727332343333:AAGfl6k1zOS4-huCdqi-4a1DWRczt2JmkMQ/sendMessage"
 	method := "POST"
 
 	bd := TgTestBody{
@@ -130,7 +130,7 @@ func TestExchangeSendBotMsg(t *testing.T) {
 
 	fmt.Printf("\nmsg:\n%s\n", payloadstr)
 
-	url := "https://api.telegram.org/bot7727332343:AAGfl6k1zOS4-huCdqi-4a1DWRczt2JmkMQ/sendMessage"
+	url := "https://api.telegram.org/bot7727332343333:AAGfl6k1zOS4-huCdqi-4a1DWRczt2JmkMQ/sendMessage"
 	method := "POST"
 
 	payload := strings.NewReader(payloadstr)
@@ -192,7 +192,7 @@ func TestKOLSendBotMsg(t *testing.T) {
 
 	fmt.Printf("\nmsg:\n%s\n", payloadstr)
 
-	url := "https://api.telegram.org/bot7727332343:AAGfl6k1zOS4-huCdqi-4a1DWRczt2JmkMQ/sendMessage"
+	url := "https://api.telegram.org/bot7727332343333:AAGfl6k1zOS4-huCdqi-4a1DWRczt2JmkMQ/sendMessage"
 	method := "POST"
 
 	payload := strings.NewReader(payloadstr)
@@ -237,7 +237,7 @@ func TestCuratedSendBotMsg(t *testing.T) {
 
 	fmt.Printf("\nmsg:\n%s\n", msg)
 
-	url := "https://api.telegram.org/bot7727332343:AAGfl6k1zOS4-huCdqi-4a1DWRczt2JmkMQ/sendMessage"
+	url := "https://api.telegram.org/bot7727332343333:AAGfl6k1zOS4-huCdqi-4a1DWRczt2JmkMQ/sendMessage"
 	method := "POST"
 
 	bd := TgTestBody{
@@ -312,7 +312,7 @@ func TestAddrCreateBotMsg(t *testing.T) {
 
 	fmt.Printf("\nmsg:\n%s\n", payloadstr)
 
-	url := "https://api.telegram.org/bot7727332343:AAGfl6k1zOS4-huCdqi-4a1DWRczt2JmkMQ/sendMessage"
+	url := "https://api.telegram.org/bot7727332343333:AAGfl6k1zOS4-huCdqi-4a1DWRczt2JmkMQ/sendMessage"
 	method := "POST"
 
 	payload := strings.NewReader(payloadstr)
@@ -367,7 +367,7 @@ func TestFomoCallMsg(t *testing.T) {
 
 	msg := ConstructFomoMessage(data)
 
-	url := "https://api.telegram.org/bot7727332343:AAGfl6k1zOS4-huCdqi-4a1DWRczt2JmkMQ/sendMessage"
+	url := "https://api.telegram.org/bot7727332343333:AAGfl6k1zOS4-huCdqi-4a1DWRczt2JmkMQ/sendMessage"
 	method := "POST"
 
 	bd := TgTestBody{
