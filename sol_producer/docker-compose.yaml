@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  server:
+    image: sol-producer-test:latest
+    container_name: solproducer-test
+    ports:
+      - "0.0.0.0:8000:8080"
+    restart: on-failure
+    volumes:
+      - "./config.yaml:/root/config.yaml"
+      - "./log:/root/log"
+    networks:
+      - sdk
+
+networks:
+  sdk:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.9.0/24

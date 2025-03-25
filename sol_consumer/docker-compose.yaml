@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  server:
+    image: sol-consumer-test:latest
+    container_name: solconsumer-test
+    ports:
+      - "0.0.0.0:27017:8000"
+    restart: on-failure
+    volumes:
+      - "./config.yaml:/root/config.yaml"
+      - "./log:/root/log"
+    networks:
+      - sdk
+
+networks:
+  sdk:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.10.0/24
